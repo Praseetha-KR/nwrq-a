@@ -37,4 +37,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(API_URL, url);
         startActivity(intent);
     }
+
+    public void reqSpringRestTemplate(View view) {
+        Intent intent = new Intent(this, SpringRestTemplateActivity.class);
+        intent.putExtra(API_URL, url);
+        startActivity(intent);
+    }
 }
