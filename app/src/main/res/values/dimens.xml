@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+
+    <dimen name="req_methods_title_top_margin">64dp</dimen>
+    <dimen name="req_methods_title_bottom_margin">32dp</dimen>
+    <dimen name="req_method_bottom_margin">16dp</dimen>
+
+    <dimen name="sub_heading_top_margin">24dp</dimen>
+    <dimen name="sub_heading_bottom_margin">16dp</dimen>
+
+    <dimen name="fill_bg_padding">8dp</dimen>
+
+    <dimen name="rounded_fill_padding_horizontal">16dp</dimen>
+    <dimen name="rounded_fill_padding_top">5dp</dimen>
+    <dimen name="rounded_fill_padding_bottom">7dp</dimen>
+</resources>

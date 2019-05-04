@@ -1,13 +1,10 @@
 <resources>
     <string name="app_name">NwRq</string>
 
-    <string name="url">URL</string>
-    <string name="headers">Headers</string>
-    <string name="payload">Payload</string>
-    <string name="send">Send</string>
-    <string name="cancel">Cancel</string>
     <string name="empty"> </string>
+    <string name="request_methods">API Request Methods</string>
 
+    <string name="url">URL</string>
     <string name="request">Request</string>
     <string name="response">Response</string>
 
@@ -16,4 +13,12 @@
     <string name="put">PUT</string>
     <string name="patch">PATCH</string>
     <string name="delete">DELETE</string>
+
+    <string name="state_requesting">Requesting...</string>
+    <string name="state_waiting_response">Awaiting response...</string>
+    <string name="state_received_response">Response received.</string>
+    <string name="state_parsing_response">Parsing response...</string>
+    <string name="state_error">Error.</string>
+
+    <string name="ok_http">OkHttp</string>
 </resources>

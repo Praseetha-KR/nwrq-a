@@ -8,72 +8,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:paddingVertical="@dimen/activity_vertical_margin">
 
         <EditText
             android:id="@+id/editUrl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="64dp"
-            android:layout_marginEnd="32dp"
-            android:ems="10"
             android:hint="@string/url"
-            android:inputType="textUri|textPersonName" />
+            android:inputType="textUri" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_methods_title_top_margin"
+            android:layout_marginBottom="@dimen/req_methods_title_bottom_margin"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/request_methods"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_corner_fill_primary_light" />
 
         <Button
-            android:id="@+id/btnSend"
+            android:id="@+id/btnSendOkHttp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
             android:background="@color/colorAccent"
-            android:text="@string/send"
+            android:onClick="reqOkHttp"
+            android:text="@string/ok_http"
+            android:textAllCaps="false"
             android:textColor="#FFFFFF" />
-
-        <TextView
-            android:id="@+id/textRequestTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:text="@string/request"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textRequest"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
-            android:text="@string/empty" />
-
-        <TextView
-            android:id="@+id/textResponseTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="32dp"
-            android:text="@string/response"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:id="@+id/textResponse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="32dp"
-            android:background="#ffffff"
-            android:padding="8dp"
-            android:text="@string/empty" />
 
     </LinearLayout>
 
