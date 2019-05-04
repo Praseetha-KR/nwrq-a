@@ -41,15 +41,7 @@ public class VolleyActivity extends AppCompatActivity {
         textResponse = findViewById(R.id.textResponse);
         textResponse.setText(R.string.state_waiting_response);
 
-        new ApiCallTask().execute(url);
-    }
-
-    private class ApiCallTask extends AsyncTask<String, String, String> {
-        @Override
-        protected String doInBackground(String... urls) {
-            reqWithVolley(urls[0]);
-            return null;
-        }
+        reqWithVolley(url);
     }
 
     void reqWithVolley(String url) {
