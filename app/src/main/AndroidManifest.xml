@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".HttpURLConnectionActivity"
+            android:label="@string/http_url_connection"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
             android:name=".OkHttpActivity"
+            android:label="@string/ok_http"
             android:parentActivityName=".MainActivity">
         </activity>
         <activity android:name=".MainActivity">

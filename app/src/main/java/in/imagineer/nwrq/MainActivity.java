@@ -25,4 +25,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(API_URL, url);
         startActivity(intent);
     }
+
+    public void reqHttpURLConnection(View view) {
+        Intent intent = new Intent(this, HttpURLConnectionActivity.class);
+        intent.putExtra(API_URL, url);
+        startActivity(intent);
+    }
 }

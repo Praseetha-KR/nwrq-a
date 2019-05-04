@@ -17,6 +17,23 @@ public class OkHttpActivity extends AppCompatActivity {
     TextView textRequest;
     TextView textResponse;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ok_http);
+
+        Intent intent = getIntent();
+        String url = intent.getStringExtra(MainActivity.API_URL);
+
+        textRequest = findViewById(R.id.textRequest);
+        textRequest.setText(R.string.state_requesting);
+
+        textResponse = findViewById(R.id.textResponse);
+        textResponse.setText(R.string.state_waiting_response);
+
+        reqWithOkHttp(url);
+    }
+
     void reqWithOkHttp(String url) {
         OkHttpClient client = new OkHttpClient();
 
@@ -45,22 +62,5 @@ public class OkHttpActivity extends AppCompatActivity {
                 });
             }
         });
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ok_http);
-
-        Intent intent = getIntent();
-        String url = intent.getStringExtra(MainActivity.API_URL);
-
-        textRequest = findViewById(R.id.textRequest);
-        textRequest.setText(R.string.state_requesting);
-
-        textResponse = findViewById(R.id.textResponse);
-        textResponse.setText(R.string.state_waiting_response);
-
-        reqWithOkHttp(url);
     }
 }
