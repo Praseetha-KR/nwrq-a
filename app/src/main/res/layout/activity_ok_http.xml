@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/sub_heading_bottom_margin"
-            android:text="@string/request"
+            android:text="@string/request_obj"
             android:textColor="@android:color/black"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textStyle="bold" />

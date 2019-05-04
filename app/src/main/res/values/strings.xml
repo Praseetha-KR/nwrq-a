@@ -5,7 +5,7 @@
     <string name="request_methods">API Request Methods</string>
 
     <string name="url">URL</string>
-    <string name="request">Request</string>
+    <string name="request_obj">Request Object</string>
     <string name="response">Response</string>
 
     <string name="get">GET</string>

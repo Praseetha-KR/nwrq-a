@@ -49,14 +49,17 @@ public class HttpURLConnectionActivity extends AppCompatActivity {
         try {
             URL apiUrl = new URL(url);
             HttpURLConnection urlConnection = (HttpURLConnection) apiUrl.openConnection();
+            textRequest.setText(urlConnection.toString());
+
             InputStream in = new BufferedInputStream(urlConnection.getInputStream());
             String res = readStream(in);
             final String resJson = Utils.prettifyJson(res);
-            urlConnection.disconnect();
 
             HttpURLConnectionActivity.this.runOnUiThread(() -> {
                 textResponse.setText(resJson);
             });
+
+            urlConnection.disconnect();
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
