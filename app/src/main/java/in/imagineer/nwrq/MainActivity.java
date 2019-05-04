@@ -31,4 +31,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(API_URL, url);
         startActivity(intent);
     }
+
+    public void reqVolley(View view) {
+        Intent intent = new Intent(this, VolleyActivity.class);
+        intent.putExtra(API_URL, url);
+        startActivity(intent);
+    }
 }

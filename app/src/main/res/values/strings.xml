@@ -22,4 +22,5 @@
 
     <string name="ok_http">OkHttp</string>
     <string name="http_url_connection">HttpURLConnection</string>
+    <string name="volley">Volley</string>
 </resources>

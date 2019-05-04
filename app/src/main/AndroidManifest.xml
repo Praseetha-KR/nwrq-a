@@ -12,15 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HttpURLConnectionActivity"
-            android:label="@string/http_url_connection"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity
             android:name=".OkHttpActivity"
             android:label="@string/ok_http"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".HttpURLConnectionActivity"
+            android:label="@string/http_url_connection"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".VolleyActivity"
+            android:label="@string/volley"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
