@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NwRq</string>
+
+    <string name="url">URL</string>
+    <string name="headers">Headers</string>
+    <string name="payload">Payload</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty"> </string>
+
+    <string name="request">Request</string>
+    <string name="response">Response</string>
+
+    <string name="get">GET</string>
+    <string name="post">POST</string>
+    <string name="put">PUT</string>
+    <string name="patch">PATCH</string>
+    <string name="delete">DELETE</string>
+</resources>
