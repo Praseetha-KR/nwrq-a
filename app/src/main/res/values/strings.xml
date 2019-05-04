@@ -24,4 +24,5 @@
     <string name="http_url_connection">HttpURLConnection</string>
     <string name="volley">Volley</string>
     <string name="spring_rest_template">Spring Rest Template</string>
+    <string name="feign">Feign</string>
 </resources>

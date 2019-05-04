@@ -43,4 +43,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(API_URL, url);
         startActivity(intent);
     }
+
+    public void reqFeign(View view) {
+        Intent intent = new Intent(this, FeignActivity.class);
+        intent.putExtra(API_URL, url);
+        startActivity(intent);
+    }
 }

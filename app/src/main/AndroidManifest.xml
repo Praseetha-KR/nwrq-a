@@ -27,11 +27,17 @@
             android:name=".SpringRestTemplateActivity"
             android:label="@string/spring_rest_template"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FeignActivity"
+            android:label="@string/feign"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
     </application>
