@@ -40,6 +40,10 @@
             android:label="@string/apache_http_client"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".IonActivity"
+            android:label="@string/ion"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>

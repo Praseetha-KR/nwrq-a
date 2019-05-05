@@ -61,4 +61,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(API_URL, url);
         startActivity(intent);
     }
+
+    public void reqIon(View view) {
+        Intent intent = new Intent(this, IonActivity.class);
+        intent.putExtra(API_URL, url);
+        startActivity(intent);
+    }
 }

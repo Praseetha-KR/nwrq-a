@@ -113,6 +113,17 @@
             android:textAllCaps="false"
             android:textColor="#FFFFFF" />
 
+        <Button
+            android:id="@+id/btnSendIon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:background="@color/colorAccent"
+            android:onClick="reqIon"
+            android:text="@string/ion"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
     </LinearLayout>
 
 </ScrollView>
