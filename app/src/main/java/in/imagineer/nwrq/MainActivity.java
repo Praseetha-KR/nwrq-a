@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView editUrl = findViewById(R.id.editUrl);
-        editUrl.setText(url);
+        editUrl.setText("GET " + url);
     }
 
     public void reqOkHttp(View view) {
