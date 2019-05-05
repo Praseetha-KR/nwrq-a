@@ -81,6 +81,17 @@
             android:textColor="#FFFFFF" />
 
         <Button
+            android:id="@+id/btnSendRetrofit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:background="@color/colorAccent"
+            android:onClick="reqRetrofit"
+            android:text="@string/retrofit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
             android:id="@+id/btnSendFeign"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
