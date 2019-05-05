@@ -26,7 +26,8 @@
     <string name="spring_rest_template">Spring Rest Template</string>
     <string name="retrofit">Retrofit</string>
     <string name="feign">Feign</string>
-    <string name="apache_http_client">ApacheHttpClient</string>
+    <string name="apache_http_client">Apache HttpClient</string>
     <string name="ion">Ion</string>
     <string name="fuel">Fuel</string>
+    <string name="loop_j">Loopj</string>
 </resources>

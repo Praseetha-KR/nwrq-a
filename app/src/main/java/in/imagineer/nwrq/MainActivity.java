@@ -73,4 +73,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(API_URL, url);
         startActivity(intent);
     }
+
+    public void reqLoopj(View view) {
+        Intent intent = new Intent(this, LoopjActivity.class);
+        intent.putExtra(API_URL, url);
+        startActivity(intent);
+    }
 }
