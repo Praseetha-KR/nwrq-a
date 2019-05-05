@@ -30,4 +30,9 @@
     <string name="ion">Ion</string>
     <string name="fuel">Fuel</string>
     <string name="loop_j">Loopj</string>
+
+    <string name="about">About</string>
+    <string name="about_title">NwRq</string>
+    <string name="about_message">Licensed under MIT.\nSource code available <a href="https://github.com/Praseetha-KR/nwrq-a">here</a>.\n\n&#169; 2019, Praseetha KR\n<a href="https://imagineer.in">https://imagineer.in</a></string>
+
 </resources>
