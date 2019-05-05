@@ -55,4 +55,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(API_URL, url);
         startActivity(intent);
     }
+
+    public void reqApacheHttpClient(View view) {
+        Intent intent = new Intent(this, ApacheHttpClientActivity.class);
+        intent.putExtra(API_URL, url);
+        startActivity(intent);
+    }
 }

@@ -102,6 +102,17 @@
             android:textAllCaps="false"
             android:textColor="#FFFFFF" />
 
+        <Button
+            android:id="@+id/btnSendApacheHttpClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:background="@color/colorAccent"
+            android:onClick="reqApacheHttpClient"
+            android:text="@string/apache_http_client"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
     </LinearLayout>
 
 </ScrollView>

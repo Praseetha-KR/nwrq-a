@@ -36,6 +36,10 @@
             android:label="@string/feign"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".ApacheHttpClientActivity"
+            android:label="@string/apache_http_client"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
