@@ -28,4 +28,5 @@
     <string name="feign">Feign</string>
     <string name="apache_http_client">ApacheHttpClient</string>
     <string name="ion">Ion</string>
+    <string name="fuel">Fuel</string>
 </resources>

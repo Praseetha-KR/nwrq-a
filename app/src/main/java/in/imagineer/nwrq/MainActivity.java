@@ -67,4 +67,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(API_URL, url);
         startActivity(intent);
     }
+
+    public void reqFuel(View view) {
+        Intent intent = new Intent(this, FuelActivity.class);
+        intent.putExtra(API_URL, url);
+        startActivity(intent);
+    }
 }

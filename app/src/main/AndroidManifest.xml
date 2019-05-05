@@ -44,6 +44,10 @@
             android:label="@string/ion"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".FuelActivity"
+            android:label="@string/fuel"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>

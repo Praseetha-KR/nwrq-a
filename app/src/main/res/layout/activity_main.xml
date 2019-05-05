@@ -124,6 +124,17 @@
             android:textAllCaps="false"
             android:textColor="#FFFFFF" />
 
+        <Button
+            android:id="@+id/btnSendFuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:background="@color/colorAccent"
+            android:onClick="reqFuel"
+            android:text="@string/fuel"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
     </LinearLayout>
 
 </ScrollView>
