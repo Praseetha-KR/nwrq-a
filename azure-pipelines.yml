@@ -26,5 +26,5 @@ steps:
     script: |
       set -e
       curl -L https://github.com/appknox/appknox-go/releases/download/0.0.2/appknox-`uname -s`-x86_64 > appknox && chmod +x appknox
-      ./appknox upload nwrq-a/nwrq/build/outputs/apk/nwrq-debug.apk
+      ./appknox upload $(Build.SourcesDirectory)/app/build/outputs/apk/debug/app-debug.apk
       rm -f appknox
