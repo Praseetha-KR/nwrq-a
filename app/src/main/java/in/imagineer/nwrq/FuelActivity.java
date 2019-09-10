@@ -35,7 +35,7 @@ public class FuelActivity extends AppCompatActivity {
 
 
     void reqWithFuel(String url) {
-        textRequest.setText(Fuel.get(url).toString());
+        textRequest.setText(url);
 
         Fuel.get(url).responseString(new Handler<String>() {
             @Override

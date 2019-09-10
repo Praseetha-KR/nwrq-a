@@ -13,7 +13,7 @@
         android:paddingVertical="@dimen/activity_vertical_margin">
 
         <TextView
-            android:id="@+id/textRequestTitle"
+            android:id="@+id/textRequestTitleGet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/sub_heading_bottom_margin"
@@ -23,7 +23,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textRequest"
+            android:id="@+id/textRequestGet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
@@ -31,7 +31,7 @@
             android:text="@string/empty" />
 
         <TextView
-            android:id="@+id/textResponseTitle"
+            android:id="@+id/textResponseTitleGet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/sub_heading_top_margin"
@@ -42,7 +42,115 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textResponse"
+            android:id="@+id/textResponseGet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/fill_bg_padding"
+            android:text="@string/empty" />
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_methods_title_top_margin"
+            android:layout_marginBottom="@dimen/req_methods_title_bottom_margin"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/post_form"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_corner_fill_primary_light" />
+
+        <TextView
+            android:id="@+id/textRequestTitlePostForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sub_heading_bottom_margin"
+            android:text="@string/request_obj"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textRequestPostForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/fill_bg_padding"
+            android:text="@string/empty" />
+
+        <TextView
+            android:id="@+id/textResponseTitlePostForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sub_heading_top_margin"
+            android:layout_marginBottom="@dimen/sub_heading_bottom_margin"
+            android:text="@string/response"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textResponsePostForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/fill_bg_padding"
+            android:text="@string/empty" />
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_methods_title_top_margin"
+            android:layout_marginBottom="@dimen/req_methods_title_bottom_margin"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/post_json"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_corner_fill_primary_light" />
+
+        <TextView
+            android:id="@+id/textRequestTitlePostJson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sub_heading_bottom_margin"
+            android:text="@string/request_obj"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textRequestPostJson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/fill_bg_padding"
+            android:text="@string/empty" />
+
+        <TextView
+            android:id="@+id/textResponseTitlePostJson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sub_heading_top_margin"
+            android:layout_marginBottom="@dimen/sub_heading_bottom_margin"
+            android:text="@string/response"
+            android:textColor="@android:color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textResponsePostJson"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"

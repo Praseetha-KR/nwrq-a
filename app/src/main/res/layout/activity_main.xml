@@ -38,6 +38,13 @@
             android:textStyle="bold"
             android:background="@drawable/rounded_corner_fill_primary_light" />
 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="okhttp3.OkHttpClient based:"
+            android:textAlignment="center" />
+
         <Button
             android:id="@+id/btnSendOkHttp"
             android:layout_width="match_parent"
@@ -46,39 +53,6 @@
             android:background="@color/colorAccent"
             android:onClick="reqOkHttp"
             android:text="@string/ok_http"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btnSendHttpURLConnection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/req_method_bottom_margin"
-            android:background="@color/colorAccent"
-            android:onClick="reqHttpURLConnection"
-            android:text="@string/http_url_connection"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btnSendVolley"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/req_method_bottom_margin"
-            android:background="@color/colorAccent"
-            android:onClick="reqVolley"
-            android:text="@string/volley"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btnSendSpringRestTemplate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/req_method_bottom_margin"
-            android:background="@color/colorAccent"
-            android:onClick="reqSpringRestTemplate"
-            android:text="@string/spring_rest_template"
             android:textAllCaps="false"
             android:textColor="#FFFFFF" />
 
@@ -93,36 +67,22 @@
             android:textAllCaps="false"
             android:textColor="#FFFFFF" />
 
-        <Button
-            android:id="@+id/btnSendFeign"
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/req_method_bottom_margin"
-            android:background="@color/colorAccent"
-            android:onClick="reqFeign"
-            android:text="@string/feign"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF" />
+            android:text="java.net.URL based:"
+            android:textAlignment="center" />
 
         <Button
-            android:id="@+id/btnSendApacheHttpClient"
+            android:id="@+id/btnSendHttpURLConnection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/req_method_bottom_margin"
             android:background="@color/colorAccent"
-            android:onClick="reqApacheHttpClient"
-            android:text="@string/apache_http_client"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btnSendIon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/req_method_bottom_margin"
-            android:background="@color/colorAccent"
-            android:onClick="reqIon"
-            android:text="@string/ion"
+            android:onClick="reqHttpURLConnection"
+            android:text="@string/http_url_connection"
             android:textAllCaps="false"
             android:textColor="#FFFFFF" />
 
@@ -138,6 +98,28 @@
             android:textColor="#FFFFFF" />
 
         <Button
+            android:id="@+id/btnSendFeign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:background="@color/colorAccent"
+            android:onClick="reqFeign"
+            android:text="@string/feign"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnSendSpringRestTemplate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:background="@color/colorAccent"
+            android:onClick="reqSpringRestTemplate"
+            android:text="@string/spring_rest_template"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
             android:id="@+id/btnSendLoopj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -145,6 +127,56 @@
             android:background="@color/colorAccent"
             android:onClick="reqLoopj"
             android:text="@string/loop_j"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:text="Java.net.URI based:"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnSendIon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:background="@color/colorAccent"
+            android:onClick="reqIon"
+            android:text="@string/ion"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnSendApacheHttpClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:background="@color/colorAccent"
+            android:onClick="reqApacheHttpClient"
+            android:text="@string/apache_http_client"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:text="Volley based:"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnSendVolley"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/req_method_bottom_margin"
+            android:background="@color/colorAccent"
+            android:onClick="reqVolley"
+            android:text="@string/volley"
             android:textAllCaps="false"
             android:textColor="#FFFFFF" />
 

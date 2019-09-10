@@ -14,6 +14,9 @@
     <string name="patch">PATCH</string>
     <string name="delete">DELETE</string>
 
+    <string name="post_form">POST type:Form</string>
+    <string name="post_json">POST type:JSON</string>
+
     <string name="state_requesting">Requesting...</string>
     <string name="state_waiting_response">Awaiting response...</string>
     <string name="state_received_response">Response received.</string>

@@ -38,8 +38,14 @@ public class FeignActivity extends AppCompatActivity {
     private class ApiCallTask extends AsyncTask<String, String, String> {
         @Override
         protected String doInBackground(String... urls) {
-            reqWithFeign(urls[0]);
-            return null;
+            String result = reqWithFeign(urls[0]);
+            return result;
+        }
+
+        @Override
+        protected void onPostExecute(String result){
+            textResponse.setText(result);
+            super.onPostExecute(result);
         }
     }
 
@@ -49,17 +55,15 @@ public class FeignActivity extends AppCompatActivity {
         PokemonModel.Characteristic characteristic(@Param("id") int id);
     }
 
-    void reqWithFeign(String url) {
+    String reqWithFeign(String url) {
+        String response;
         Pokemon pokemon = Feign.builder()
                 .decoder(new GsonDecoder())
                 .target(Pokemon.class, "https://pokeapi.co/api/v2/");
-        textRequest.setText(pokemon.toString());
-
+        textRequest.setText(url);
         PokemonModel.Characteristic pokeCharacteristic = pokemon.characteristic(1);
-
         final String resJson = Utils.prettifyJson(new Gson().toJson(pokeCharacteristic));
-        FeignActivity.this.runOnUiThread(() -> {
-            textResponse.setText(resJson);
-        });
+        response = resJson;
+        return response;
     }
 }
